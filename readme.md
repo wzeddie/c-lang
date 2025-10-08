@@ -6,3 +6,18 @@
 - c-lang-3，介绍NOI的列题和代码解题演示
 - c-lang-4，介绍在社会上，c++如何创造价值，开发一个正常的软件/app/游戏/web应用，会涉及c++哪些内容，哪些库，分别干什么用
 - c-lang-5，面向对象的类、继承、多态，这种在实际软件工程用的很多的情况。  
+  
+# 上传github和备份
+```bash
+#本地初始化
+git init 
+#添加所有文件
+git add .
+#提交所有文件
+git commit -m "init"
+
+#上传云端
+git remote add origin git@github.com:wzeddie/c-lang.git
+git branch -M main
+git push -u origin main 
+```
