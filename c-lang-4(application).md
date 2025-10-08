@@ -159,13 +159,10 @@ OpenGL / WebGL 是画笔
 ## c++能否开发向游戏茶苑、边锋等棋牌web游戏
 需要有对应的技术框架：
 C++ 不能直接在浏览器中运行，可以通过 WebAssembly（WASM） 技术，将 C++ 编译成浏览器可执行的代码。这样，你就能用 C++ 在 Web 上做游戏！  
-比如：Emscripten（主流方案 ✅），把 C++ 编译为 WebAssembly（.wasm 文件）+ JS 接口，在网页中通过 <script> 加载运行  
+比如：Emscripten（主流方案 ✅），把 C++ 编译为 WebAssembly（.wasm 文件）+ JS 接口，在网页中通过 script加载运行  
 比如：可以用 C++ + OpenGL 写游戏，Emscripten 自动帮你转换成浏览器兼容的 WebGL，很多开源游戏（如 Doom、Minecraft 克隆版）就是这么移植到网页上的！
 
-主流
-
-技术栈  
-
+c++web开发主流技术栈  
 | 层级    | 使用语言/技术                | 说明         |
 | ----- | ---------------------- | ---------- |
 | 前端渲染  | WebGL / HTML5 Canvas   | 浏览器端显示     |
@@ -173,3 +170,13 @@ C++ 不能直接在浏览器中运行，可以通过 WebAssembly（WASM） 技�
 | 网络通信  | WebSocket (JS 或 C++)   | 客户端和服务器通信  |
 | 后端服务器 | C++ / Node.js / Go     | 同步游戏数据     |
 | 存储    | SQLite / Redis / MySQL | 玩家信息、世界状态等 |
+
+## 针对以下各个阶段，有无对应的github开源项目
+如果能下载过来，学习借鉴。
+
+| 阶段     | 学习重点                                   | 说明          |
+| ------ | -------------------------------------- | ----------- |
+| 🧱 基础期 | STL容器 + 算法 + 文件IO + 智能指针               | 掌握标准库用法     |
+| ⚙️ 应用期 | CMake + Boost + spdlog + JSON + SQLite | 能构建完整小项目    |
+| 🌐 拓展期 | 网络通信(Boost.Asio) + 多线程 + Qt/SFML       | 能做联网图形化程序   |
+| 🎮 进阶期 | OpenGL / Unreal / OpenCV               | 可做3D游戏或AI应用 |
